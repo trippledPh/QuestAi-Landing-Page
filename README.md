@@ -50,3 +50,4 @@ export default tseslint.config({
 ```
 # QUEST-AI-STATIC
 # QuestAi-Landing-Page
+# QuestAi-Landing-Page
