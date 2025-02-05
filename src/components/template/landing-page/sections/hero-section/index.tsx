@@ -21,26 +21,25 @@ const HeroSection = () => {
           <Badge className="bg-primary rounded-full font-bolera font-bold text-xs px-4 h-8">
             <span className="text-black text-base font-poppins">New</span>
           </Badge>
-          <span className="text-center text-lg">
+          <span className="text-center text-base md:text-base lg:text-xl">
             QuestX bot for your X community
           </span>
-          <ArrowRight size={18} />
+          <ArrowRight className="w-16 sm:w-8 md:w-6" />
         </HeroBadge>
 
-        <div className="flex flex-col gap-8 justify-center items-center w-full">
-          <h1 className=" font-bolera font-bold text-6xl md:text-4xl lg:text-6xl  break-all flex gap-4 flex-wrap text-center justify-center tracking-wide">
-            Revolutionizing
-            <GradientText
-              className="md:text-4xl lg:text-6xl"
-              text="Giveaways"
-            />
-            for Your
-            <span>Community</span>
-          </h1>
-          <p className="text-base md:text-lg lg:text-xl text-center max-w-[600px] font-poppins">
-            Effortlessly host, automate, manage, and monitor quiz-based
-            giveaways in your community.
-          </p>
+        <div className="container">
+          <div className="flex flex-col gap-8 justify-center items-center w-full  text-5xl lg:text-6xl">
+            <h1 className=" font-bolera font-bold break-all flex gap-4 flex-wrap text-center justify-center tracking-wide">
+              Revolutionizing
+              <GradientText text="Giveaways" />
+              for Your
+              <span>Community</span>
+            </h1>
+            <p className="text-base md:text-lg lg:text-xl text-center max-w-[600px] font-poppins">
+              Effortlessly host, automate, manage, and monitor quiz-based
+              giveaways in your community.
+            </p>
+          </div>
         </div>
 
         <PrimaryButton className="text-xl">Get started</PrimaryButton>

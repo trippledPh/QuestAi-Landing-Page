@@ -4,9 +4,11 @@ import useIsMobile from "@/hooks/use-is-mobile";
 import { CHART_DATA } from "./data/chart.data";
 import PieChartActiveShape from "./helpers/pie-chart-active-shape";
 import PieChartLabel from "./helpers/pie-chart-label";
+import useWindowSize from "@/hooks/use-window-size";
 
 const PieDonutChart = () => {
   const isMobile = useIsMobile();
+  const { width } = useWindowSize();
   const [activeIndex, setActiveIndex] = useState(0);
 
   // Components
@@ -33,8 +35,8 @@ const PieDonutChart = () => {
             data={CHART_DATA}
             cx="50%"
             cy="50%"
-            innerRadius={isMobile ? 84 : 100}
-            outerRadius={isMobile ? 160 : 200}
+            innerRadius={width <= 330 ? 80 : isMobile ? 84 : 100}
+            outerRadius={width <= 330 ? 140 : isMobile ? 160 : 200}
             dataKey="value"
             onMouseEnter={(_, index) => setActiveIndex(index)}
             onMouseLeave={() => setActiveIndex(0)}

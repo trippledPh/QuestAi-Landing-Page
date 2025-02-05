@@ -13,7 +13,7 @@ const SponsorSection = () => {
       <div className="flex flex-wrap gap-4 overflow-hidden">
         {/* <InfiniteMovingCards items={SponsorData} /> */}
         {SponsorData.map((sponsor) => (
-          <Card key={sponsor.id} className="w-[350px] bg-[#1d1d1d]">
+          <Card key={sponsor.id} className="md:w-[350px] bg-[#1d1d1d]">
             <CardContent className="p-4">
               <img src={sponsor.image} alt="sponsor" />
             </CardContent>

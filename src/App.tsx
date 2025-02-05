@@ -16,7 +16,7 @@ const App = () => {
       <Header />
       <main className="space-y-[100px]">
         <HeroSection />
-        <VideoSection src="https://www.youtube.com/embed/gykBBOH9zKA?si=7E4RF1PEC2fHNVj-" />
+        <VideoSection src="https://drive.google.com/file/d/1vFNa7P-3tMVID-P4S3aYkBdUJX14El_Y/preview" />
         <div className="relative">
           <AboutSection />
           <div className="absolute top-0 left-1/2 -translate-x-1/2 -z-50 w-full">

@@ -7,14 +7,14 @@ import HeroBadge from "@/components/atoms/badge/hero-badge";
 const AboutSection = () => {
   return (
     <Section className="relative pt-[64px]" id="about">
-      <div className="grid grid-cols-1 xl:grid-cols-[55%_auto] gap-16 ">
+      <div className="grid grid-cols-1 xl:grid-cols-[45%_auto] gap-16 ">
         <div className="flex flex-col gap-8 items-start">
           <HeroBadge>
             <div>QuestAI</div>
           </HeroBadge>
 
           <div className="flex flex-col gap-6 ">
-            <h2 className="text-5xl lg:text-6xl font-bolera">QuestBot</h2>
+            <h2 className=" text-5xl lg:text-6xl font-bolera">QuestBot</h2>
             <p className="text-lg text-muted-foreground  max-w-[700px]">
               A powerful Telegram bot designed to make running quizzes and
               giveaways in your community effortless. With just a few clicks,

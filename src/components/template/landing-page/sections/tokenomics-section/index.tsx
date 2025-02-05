@@ -15,7 +15,7 @@ const TokenomicsSection = () => {
       </div>
 
       <div className="flex justify-center items-center flex-col gap-4 mb-12">
-        <div className="flex flex-col items-center justify-center p-4 gap-2 xl:flex-row">
+        <div className="flex flex-col items-center justify-center p-4 gap-2 xl:flex-row  text-5xl lg:text-6xl font-bolera">
           <h3 className="text-5xl text-center lg:text-left lg:text-6xl font-bold font-bolera lg:tracking-wide">
             Total Supply:
           </h3>
