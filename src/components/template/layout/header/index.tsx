@@ -11,6 +11,9 @@ const Header = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  // Add close menu function
+  const closeMenu = () => setIsMenuOpen(false);
+
   const menuVariants = {
     initial: { opacity: 0, height: 0 },
     animate: {
@@ -121,7 +124,11 @@ const Header = () => {
                   variants={itemVariants}
                   className="w-full py-2"
                 >
-                  <a href={`#${id}`} className="text-lg">
+                  <a
+                    href={`#${id}`}
+                    className="text-lg"
+                    onClick={closeMenu} // Add onClick handler to close menu
+                  >
                     {label}
                   </a>
                 </motion.li>

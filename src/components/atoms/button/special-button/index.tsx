@@ -17,13 +17,13 @@ const SpecialButton = ({ children, ...props }: Props) => {
       transition={{ type: "spring", stiffness: 400, damping: 10 }}
       className="group relative"
     >
-      <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-primary via-secondary to-primary opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="absolute -inset-0.5 rounded-full bg-gradient-to-r from-primary via-secondary to-primary opacity-0 blur transition-opacity duration-300 group-hover:opacity-75" />
       <div className="relative rounded-full p-[1px] bg-gradient-to-r from-primary via-secondary to-primary">
         <Button
           {...props}
           size="lg"
           className={cn(
-            "relative rounded-full px-6 py-6 text-lg bg-background text-white hover:bg-background/90",
+            "relative rounded-full px-6 py-4 text-lg bg-background text-white hover:bg-background/90",
             props.className
           )}
         >
