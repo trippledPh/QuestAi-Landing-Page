@@ -47,7 +47,7 @@ const HeroSection = () => {
         </div>
 
         <PrimaryButton className="text-xl" onClick={handleWhitePaper}>
-          White Paper
+          Get White Paper
         </PrimaryButton>
       </div>
     </Section>
