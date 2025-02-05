@@ -6,6 +6,10 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
+  const handleWhitePaper = () => {
+    window.open("/pdf/whitepaper.pdf", "_blank");
+  };
+
   return (
     <Section className="pt-[100px] xl:pb-[120px]">
       <div className="absolute inset-0 -z-20">
@@ -30,7 +34,7 @@ const HeroSection = () => {
         <div className="container">
           <div className="flex flex-col gap-8 justify-center items-center w-full  text-5xl lg:text-6xl">
             <h1 className=" font-bolera font-bold break-all flex gap-4 flex-wrap text-center justify-center tracking-wide">
-              Revolutionizing
+              <span className="text-center">Revolutionizing</span>
               <GradientText text="Giveaways" />
               for Your
               <span>Community</span>
@@ -42,7 +46,9 @@ const HeroSection = () => {
           </div>
         </div>
 
-        <PrimaryButton className="text-xl">Get started</PrimaryButton>
+        <PrimaryButton className="text-xl" onClick={handleWhitePaper}>
+          White Paper
+        </PrimaryButton>
       </div>
     </Section>
   );
