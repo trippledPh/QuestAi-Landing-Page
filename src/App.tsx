@@ -29,7 +29,7 @@ const App = () => {
         </div>
         <SponsorSection />
         <FeatureSection />
-        <VideoSection src="https://www.youtube.com/embed/gOBkdjetq-o" />
+        <VideoSection src="https://drive.google.com/file/d/137Czjs2g56Qkf1xRD_ytJN5JBNE-tlWC/preview" />
         <TokenomicsSection />
         <RoadMapSection />
         <FaqSection />
