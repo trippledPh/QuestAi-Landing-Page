@@ -34,7 +34,7 @@ const HeroSection = () => {
         <div className="container">
           <div className="flex flex-col gap-8 justify-center items-center w-full  text-[45px] lg:text-6xl">
             <h1 className=" font-bolera font-bold break-all flex gap-4 flex-wrap text-center justify-center tracking-wide">
-              <span className="text-center break-words">Revolutionizing</span>
+              <span className="text-center">Revolutionizing</span>
               <GradientText text="Giveaways" />
               for Your
               <span>Community</span>
@@ -47,7 +47,7 @@ const HeroSection = () => {
         </div>
 
         <PrimaryButton className="text-xl" onClick={handleWhitePaper}>
-          White Paper
+          Whitepaper
         </PrimaryButton>
       </div>
     </Section>
